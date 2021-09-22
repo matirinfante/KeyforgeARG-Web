@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <LINK rel="stylesheet" href="css/styleprincipal.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" charset="UTF-8">
+    <title>Keyforge LATAM - Inscribete</title>
+</head>
+<body id="body">
+<header class="p-4">
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-md bg-dark">
+            <!-- Logo -->
+            <a class="navbar-brand" href="Index.html"><img class="logo" src="img/logo/KFLATAM.png" alt="Keyforge LATAM"></a>
+            <!-- Toggler para cel -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#itemsMenu"
+                    aria-controls="itemsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Items menú -->
+            <div class="collapse navbar-collapse" id="itemsMenu">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link " href="Index.html">Inicio</a>
+                    <a class="nav-link" href="About.html">Acerca</a>
+                    <a class="nav-link" href="Crisol.html">Crisol</a>
+                    <a class="nav-link" href="Glosario.html">El juego</a>
+                    <a class="nav-link" href="Recursos.html">Recursos</a>
+                    <a class="nav-link participa active" href="#">Participa!<span class="sr-only">(current)</span></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<section>
+    <div class="container acerca-container">
+        <div class="row p-4">
+            <div class="col-9">
+                <h2 class="text-left">Inscribete para la próxima LIGA LATAM</h2>
+                <h5 class="text-left">Sin costo, rápido y sencillo a través de Challonge. Limite de SAS: 75.</h5>
+            </div>
+            <div class="col-3">
+                <img src="img/llaves.png" class="float-right" width="85%">
+            </div>
+        </div>
+        <form class="p-2 m-5 formulario" id="formulario" novalidate>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fa fa-pencil"></i>
+                        </div>
+                    </div>
+                    <input id="nombre" name="nombre" type="text" class="form-control" aria-describedby="nombreHelpBlock"
+                           required="required">
+                </div>
+                <span id="nombreHelpBlock" class="form-text text-muted">Ej.: Leandro</span>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fa fa-pencil"></i>
+                        </div>
+                    </div>
+                    <input id="apellido" name="apellido" type="text" class="form-control"
+                           aria-describedby="apellidoHelpBlock" required="required">
+                </div>
+                <span id="apellidoHelpBlock" class="form-text text-muted">Ej.: Pérez</span>
+            </div>
+            <div class="form-group">
+                <label for="pais">Pais</label>
+                <div>
+                    <select id="pais" name="pais" class="custom-select" required="required" onchange="cambiarPrepend()">
+                        <option value="" selected disabled hidden>Elegir pais</option>
+                        <option value="ar">Argentina</option>
+                        <option value="cl">Chile</option>
+                        <option value="col">Colombia</option>
+                        <option value="ecu">Ecuador</option>
+                        <option value="pe">Perú</option>
+                        <option value="uy">Uruguay</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha de nacimiento</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                    </div>
+                    <input id="fecha" name="fecha" type="date" class="form-control"
+                           aria-describedby="fechaHelpBlock" required="required">
+                </div>
+                <span id="fechaHelpBlock"
+                      class="form-text text-muted">Debe ser mayor de 6 años para poder participar.</span>
+            </div>
+            <div class="form-group">
+                <label>¿Cómo te contactamos?</label>
+                <div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input name="tipocomunicacion" id="tipoemail" type="radio" required="required"
+                               class="custom-control-input" value="email" onchange="seleccionar()" checked>
+                        <label for="tipoemail" class="custom-control-label">E-mail</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input name="tipocomunicacion" id="tipodiscord" type="radio" required="required"
+                               class="custom-control-input" value="discord" onchange="seleccionar()">
+                        <label for="tipodiscord" class="custom-control-label">Discord</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input name="tipocomunicacion" id="tipoinstagram" type="radio" required="required"
+                               class="custom-control-input" value="instagram" onchange="seleccionar()">
+                        <label for="tipoinstagram" class="custom-control-label">Instagram</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input name="tipocomunicacion" id="tipowpp" type="radio" required="required"
+                               class="custom-control-input" value="whatsapp" onchange="seleccionar()">
+                        <label for="tipowpp" class="custom-control-label">Whatsapp</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" id="campoemail" style="display: block;">
+                <label for="mail">E-mail</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                    </div>
+                    <input id="mail" name="mail" placeholder="name@dominio.com" type="email" required="required"
+                           class="form-control">
+                </div>
+            </div>
+            <div class="form-group" id="campodiscord" style="display: none;">
+                <label for="discordtag">Discord tag</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fa fa-at"></i>
+                        </div>
+                    </div>
+                    <input id="discordtag" name="discordtag" placeholder="Nickname#1234" type="text"
+                           pattern="([A-Za-z0-9])+#([0-9]){4}" required="required"
+                           class="form-control">
+                </div>
+            </div>
+            <div class="form-group" id="campoinstagram" style="display: none;">
+                <label for="iguser">Instagram user</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fa fa-at"></i>
+                        </div>
+                    </div>
+                    <input id="iguser" name="iguser" placeholder="Username" type="text" required="required"
+                           class="form-control">
+                </div>
+            </div>
+            <div class="form-group" id="campowpp" style="display: none;">
+                <label for="wpp">WhatsApp</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text" id="prependwpp">+</div>
+                    </div>
+                    <input id="wpp" name="wpp" placeholder="número" type="number" min="0"
+                           class="form-control" required="required">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="linkmazo">Link DoK</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">decksofkeyforge.com/id/</div>
+                    </div>
+                    <input id="linkmazo" name="linkmazo" type="text" class="form-control" required="required"
+                           aria-describedby="linkmazoHelpBlock">
+                </div>
+                <span id="linkmazoHelpBlock" class="form-text text-muted">Debes colocar solo el id del link de decksofkeyforge.com o keyforgegame.com</span>
+            </div>
+            <div class="form-group">
+                <label>¿Qué te gusta más de la carta de arconte?</label>
+                <div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="arconte-opinion" id="arconte-opinion_0" type="checkbox"
+                               class="custom-control-input" value="dib">
+                        <label for="arconte-opinion_0" class="custom-control-label">Dibujo</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="arconte-opinion" id="arconte-opinion_1" type="checkbox"
+                               class="custom-control-input" value="color">
+                        <label for="arconte-opinion_1" class="custom-control-label">Color</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="arconte-opinion" id="arconte-opinion_2" type="checkbox"
+                               class="custom-control-input" value="nom">
+                        <label for="arconte-opinion_2" class="custom-control-label">Nombre</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="arconte-opinion" id="arconte-opinion_3" type="checkbox"
+                               class="custom-control-input" value="casas">
+                        <label for="arconte-opinion_3" class="custom-control-label">Casas involucradas</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>¿Mejor/es casa/s de Keyforge?</label>
+                <div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="opcasa" id="opcasa_0" type="checkbox" class="custom-control-input" value="shadows">
+                        <label for="opcasa_0" class="custom-control-label">Sombras</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="opcasa" id="opcasa_1" type="checkbox" class="custom-control-input" value="sanctum">
+                        <label for="opcasa_1" class="custom-control-label">Sanctum</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="opcasa" id="opcasa_2" type="checkbox" class="custom-control-input"
+                               value="untammed">
+                        <label for="opcasa_2" class="custom-control-label">Indómita</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="opcasa" id="opcasa_3" type="checkbox" class="custom-control-input" value="logos">
+                        <label for="opcasa_3" class="custom-control-label">Logos</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="opcasa" id="opcasa_4" type="checkbox" class="custom-control-input" value="dis">
+                        <label for="opcasa_4" class="custom-control-label">Dis</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="opcasa" id="opcasa_5" type="checkbox" class="custom-control-input" value="brobnar">
+                        <label for="opcasa_5" class="custom-control-label">Brobnar</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="opcasa" id="opcasa_6" type="checkbox" class="custom-control-input"
+                               value="staralliance">
+                        <label for="opcasa_6" class="custom-control-label">Alianza Estelar</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="opcasa" id="opcasa_7" type="checkbox" class="custom-control-input" value="saurian">
+                        <label for="opcasa_7" class="custom-control-label">Saurios</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="opcasa" id="opcasa_8" type="checkbox" class="custom-control-input" value="mars">
+                        <label for="opcasa_8" class="custom-control-label">Marte</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="opcasa" id="opcasa_9" type="checkbox" class="custom-control-input"
+                               value="unphatomable">
+                        <label for="opcasa_9" class="custom-control-label">Insondable</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group pt-4">
+                <button name="submit" type="submit" class="btn btn-primary w-100">
+                    Enviar
+                </button>
+            </div>
+        </form>
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="img/characters/img05.png" width="75%">
+            </div>
+        </div>
+    </div>
+</section>
+<div class="floating-button" onclick="botonToggle();">
+    <span><img src="img/iconos/aember2.png" width="300%"></span>
+    <ul>
+        <li onclick="cambiarPrimeraExp()"><img src="img/iconos/indomita.png">Llamada de los Arcontes</li>
+        <li onclick="cambiarSegundaExp()"><img src="img/iconos/marte.png">Edad de la Ascension</li>
+        <li onclick="cambiarTerceraExp()"><img src="img/iconos/saurios.png">Mundos en colisión</li>
+        <li onclick="cambiarCuartaExp()"><img src="img/iconos/drawicon.png">Mutación Masiva</li>
+        <li onclick="cambiarQuintaExp()"><img src="img/iconos/insondable.png">Marea Oscura</li>
+    </ul>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-social d-flex justify-content-around pt-5">
+            <a href="https://www.twitch.tv/keyforgeargentina"><i class="fa fa-twitch"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/keyforgelatam/"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-at"></i></a>
+            <a href="#"><i class="fa fa-telegram"></i></a>
+        </div>
+        <div class="copyright"><a href="">@matirinfante</a> 2021 @ TUDW - UNCo</div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script type="application/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="application/javascript" src="js/validacionFormulario.js"></script>
+<script type="application/javascript" src="js/floatingButton.js"></script>
+</body>
+</html>

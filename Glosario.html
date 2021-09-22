@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <LINK rel="stylesheet" href="css/styleprincipal.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="js/popover.js"></script>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" charset="UTF-8">
+    <title>Keyforge LATAM - El juego</title>
+</head>
+<body id="body" class="glosario">
+<header class="p-4">
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-md bg-dark">
+            <!-- Logo -->
+            <a class="navbar-brand" href="Index.html"><img class="logo" src="img/logo/KFLATAM.png" alt="Keyforge LATAM"></a>
+            <!-- Toggler para cel -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#itemsMenu"
+                    aria-controls="itemsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Items menú -->
+            <div class="collapse navbar-collapse" id="itemsMenu">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="Index.html">Inicio</a>
+                    <a class="nav-link" href="About.html">Acerca</a>
+                    <a class="nav-link" href="Crisol.html">Crisol</a>
+                    <a class="nav-link active" href="Glosario.html">El juego<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="Recursos.html">Recursos</a>
+                    <a class="nav-link participa" href="Contact.html">Participa!</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- Contenedor principal -->
+<section>
+    <div class="container acerca-container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-left">
+                    <h1 class="p-3">BIENVENIDO AL CRISOL...</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 pt-5">
+                <div class="">
+                    <img src="img/characters/bad-penny.png" width="120%"/>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="p-lg-5">
+                    <p> Eres un <strong>Arconte</strong>. Aclamado por algunos como un dios, respetado por otros por tu
+                        sabiduría,
+                        naciste —o tal vez te crearon— en el Crisol, un mundo en el que todo es posible. El Crisol es
+                        antiguo, pero siempre renovado. Un planeta artificial que cuelga en el centro del universo, las
+                        muchas capas del Crisol permanecen constantemente en construcción por los enigmáticos y
+                        traviesos Arquitectos.</p>
+                    <p>Para las materias primas, los arquitectos han cosechado innumerables
+                        mundos, mezclándolos en un nuevo todo familiar y ajeno a las criaturas que allí habitan. Ya sean
+                        especímenes solitarios o culturas enteras, los seres llevados al Crisol se encuentran en un
+                        extraño país de las maravillas sin ningún medio obvio para regresar a sus antiguos hogares.
+                        Algunos prosperan, construyen nuevas sociedades y desarrollan nuevas tecnologías con la ayuda de
+                        la misteriosa sustancia psíquica conocida como Æmbar. Algunos descartan las trampas de sus
+                        viejas vidas, adoptando las formas y costumbres de las nuevas tribus descubiertas en este nuevo
+                        mundo. Otros devienen, cuerpos y mentes retorcidos más allá de todo reconocimiento, incorporando
+                        Æmbar en sus propios cuerpos. Como Arconte, has reunido seguidores en tus viajes por el Crisol,
+                        aliados que encuentran valor en tu sabiduría eterna y tu capacidad para hablar con todas las
+                        criaturas.</p>
+                    <p>Con la ayuda de estos aliados, buscas bóvedas ocultas en todo el Crisol por los
+                        arquitectos crípticos. Cada bóveda solo se puede desbloquear con llaves forjadas en ámbar. Una
+                        vez abierta, el contenido de una Bóveda (el poder y el conocimiento de los Arquitectos) puede
+                        ser consumido por un solo Arconte. Cuando dos Arcontes descubren una Bóveda, solo uno puede
+                        obtener su conocimiento. Solo uno puede acercarse un paso más al secreto del Crisol ...
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 p-5">
+                <h3>INFORMACIÓN GENERAL</h3>
+                <p> KeyForge es un juego de cartas para dos jugadores en el que cada jugador asume el papel de un
+                    Archon y lidera el mazo de ese Archon contra su oponente. El mazo de un jugador representa a un
+                    equipo que intenta obtener Æmbar y forjar llaves. El primer jugador que consiga tres llaves
+                    podrá desbloquear una bóveda y ganar el juego. La característica que define a KeyForge es que no
+                    hay dos mazos iguales. Este no es un juego de cartas coleccionables, no puedes crear un mazo.
+                    Más bien, cada mazo debe permanecer como está. ¡Cada mazo que existe es único!</p>
+            </div>
+            <div class="col-6 p-3">
+                <img src="img/tutorial/overviewkf.png" width="100%">
+            </div>
+        </div>
+        <!-- Tipos de cartas popover -->
+        <div class="row p-5 text-center">
+            <div class="col-12">
+                <h2>¿Cuáles son los tipos de cartas?</h2>
+            </div>
+        </div>
+        <div class="row p-5 text-center">
+            <div class="col-12">
+                <img src="img/tutorial/tiposdecarta.png">
+            </div>
+        </div>
+        <div class="row p-1 text-center">
+            <div class="col-2 ml-auto">
+                <button class="btn btn-danger" data-toggle="popover" title="Carta de Acción"
+                        data-content="Generalmente proporcionan un efecto inmediato. A veces, también pueden aplicarse a un turno completo."
+                        data-placement="left">
+                    Acción
+                </button>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-danger" data-toggle="popover" title="Carta de Artefacto"
+                        data-content="Entran en juego agotados, lo que significa que no se pueden usar en el primer turno que están en juego.
+                        Sin embargo, a diferencia de los eventos, permanecen en juego y se pueden usar en cualquier turno futuro en el que declares la casa a la que pertenecen."
+                        data-placement="bottom">
+                    Artefacto
+                </button>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-danger" data-toggle="popover" title="Carta de Criatura"
+                        data-content="Como los artefactos, entran en juego agotados y permanecen en juego. Esto significa que puede usarlos en turnos futuros en los que declare su casa."
+                        data-placement="top">
+                    Criatura
+                </button>
+            </div>
+            <div class="col-2 mr-auto">
+                <button class="btn btn-danger" data-toggle="popover" title="Carta de Mejora"
+                        data-content="Se adjuntan bajo las criaturas y permanecen en juego, aunque no entren en juego agotadas. Por lo general, brindan un beneficio inmediato a la criatura."
+                        data-placement="right">
+                    Mejora
+                </button>
+            </div>
+        </div>
+        <hr class="mt-5">
+        <div class="row text-center mt-5 p-3">
+            <div class="col-12">
+                <h2>Casas jugables</h2>
+                <p class="text-black-50">(Haz clic para saber más)</p>
+            </div>
+        </div>
+        <!-- Casas popover + slider -->
+        <div class="row mt-4 p-5 text-center">
+            <div class="col-md-12">
+                <div id="showcasas" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators pt-5">
+                        <li data-target="#showcasas" data-slide-to="0" class="active"></li>
+                        <li data-target="#showcasas" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active text-center">
+                            <div class="row p-3 text-center">
+                                <div class="col-md-1">
+                                </div>
+                                <div class="col-md-2 aumentar">
+                                    <a tabindex="0" role="button" data-toggle="popover"
+                                       data-trigger="focus" title="Brobnar"
+                                       data-content="Es la casa de la lucha, inspirada temáticamente por la mitología nórdica y la cultura guerrera."
+                                       data-placement="bottom">
+                                        <img src="img/housepins/brobnar.png" alt="brobnar"
+                                             style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-2 aumentar">
+                                    <a tabindex="0" role="button" data-toggle="popover"
+                                       data-trigger="focus" title="Dis"
+                                       data-content="Es la casa de la disrupción, con un tema infernal encarnado por demonios e imps."
+                                       data-placement="bottom">
+                                        <img src="img/housepins/dis.png" alt="dis" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-2 aumentar">
+                                    <a tabindex="0" role="button" data-toggle="popover"
+                                       data-trigger="focus" title="Logos"
+                                       data-content="Inspirado en temas científicos y tecnológicos, Logos es la casa de la eficiencia."
+                                       data-placement="bottom">
+                                        <img src="img/housepins/logos.png" alt="logos"
+                                             style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-2 aumentar">
+                                    <a tabindex="0" role="button" data-toggle="popover"
+                                       data-trigger="focus" title="Marte"
+                                       data-content="A partir de las representaciones clásicas de los marcianos de la cultura pop,
+                                        esta es la casa más aislada de KeyForge, con muchos efectos que solo se sinergizan con otras cartas de Marte."
+                                       data-placement="bottom">
+                                        <img src="img/housepins/marte.png" alt="marte"
+                                             style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-2 aumentar">
+                                    <a tabindex="0" role="button" data-toggle="popover"
+                                       data-trigger="focus" title="Insondable"
+                                       data-content="La incorporación más reciente al mundo de KeyForge, presenta criaturas acuáticas y un tema de aguas profundas."
+                                       data-placement="bottom">
+                                        <img src="img/housepins/insondable.png" alt="insondable"
+                                             style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row p-3">
+                                <div class="col-md-1">
+                                </div>
+                                <div class="col-md-2 aumentar">
+                                    <a tabindex="0" role="button" data-toggle="popover"
+                                       data-trigger="focus" title="Sanctum"
+                                       data-content="Contrasta con el demoníaco Dis: una casa de monjes y caballeros angelicales.
+                                       Las tareas principales de Sanctum son el control del tablero a través de poderosas criaturas con armadura, capturando Æmbar y curando."
+                                       data-placement="bottom">
+                                        <img src="img/housepins/sanctum.png" alt="sanctum" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-2 aumentar">
+                                    <a tabindex="0" role="button" data-toggle="popover"
+                                       data-trigger="focus" title="Sombras"
+                                       data-content="Es la casa disimulada. Contiene criaturas pequeñas y esquivas y poderosos efectos que infligen daño directo y, más que cualquier otra casa, roban Æmbar."
+                                       data-placement="bottom">
+                                        <img src="img/housepins/sombras.png" alt="sombras" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-2 aumentar">
+                                    <a tabindex="0" role="button" data-toggle="popover"
+                                       data-trigger="focus" title="Indómita"
+                                       data-content="Es la casa inspirada en la naturaleza y el desierto, con animales, plantas, humanos y otras formas de vida. Sus tareas principales son el estallido de Æmbar y la recursividad."
+                                       data-placement="bottom">
+                                        <img src="img/housepins/indomita.png" alt="indomita" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-2 aumentar">
+                                    <a tabindex="0" role="button" data-toggle="popover"
+                                       data-trigger="focus" title="Saurios"
+                                       data-content="Con una mezcla única de cultura grecorromana y dinosaurios, fue una de las nuevas casas en el tercer set del juego, Worlds Collide."
+                                       data-placement="bottom">
+                                        <img src="img/housepins/saurios.png" alt="saurios" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-2 aumentar">
+                                    <a tabindex="0" role="button" data-toggle="popover"
+                                       data-trigger="focus" title="Alianza Estelar"
+                                       data-content="Inspirada en las tropas clásicos de la ciencia ficción, es temáticamente opuesta a la casa Marte."
+                                       data-placement="bottom">
+                                        <img src="img/housepins/staralliance.png" alt="staralliance"
+                                             style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#showcasas" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#showcasas" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Explicación turno -->
+        <div class="row p-3 text-center">
+            <div class="col-12">
+                <h2>¿Cómo es un turno?</h2>
+            </div>
+        </div>
+        <div class="row p-5">
+            <div class="col-8">
+                <p>Para comenzar un juego, ambos jugadores barajan sus mazos y determinan al azar quién será el primer
+                    jugador.
+                    ser. El primer jugador roba una mano inicial de 7 cartas y el segundo jugador roba una mano de 6
+                    cartas.
+                    Los jugadores pueden optar por hacer un mulligan, donde barajan su mano inicial de regreso a su
+                    mazo.
+                    y dibuja una nueva mano inicial. Cuando hacen esto, roban una carta menos.</p>
+
+                <p><strong>Cada turno</strong>, sigue estos pasos:</p>
+                <ol>
+                    <li>Comprueba si tienes suficiente ámbar para forjar una llave. Si es así, forja una
+                        llave.Solo puedes forjar una
+                        llave por turno, independientemente de la cantidad de Aember que tengas.
+                    </li>
+                    <li> Declare una casa activa.
+                    </li>
+                    <li>Juega, descarta y usa cartas de la casa declarada.</li>
+                    <li>Prepara todas tus criaturas, artefactos y mejoras agotados.</li>
+                    <li> Roba hasta seis cartas.</li>
+                </ol>
+                <p>La única excepción a esta estructura está en el primer turno del juego. En el primer turno, el
+                    El primer jugador solo puede jugar una carta.</p>
+            </div>
+            <div class="col-4">
+                <img src="img/characters/img06.png" width="110%">
+            </div>
+        </div>
+    </div>
+</section>
+<div class="floating-button" onclick="botonToggle();">
+    <span><img src="img/iconos/aember2.png" width="300%"></span>
+    <ul>
+        <li onclick="cambiarPrimeraExp()"><img src="img/iconos/indomita.png">Llamada de los Arcontes</li>
+        <li onclick="cambiarSegundaExp()"><img src="img/iconos/marte.png">Edad de la Ascension</li>
+        <li onclick="cambiarTerceraExp()"><img src="img/iconos/saurios.png">Mundos en colisión</li>
+        <li onclick="cambiarCuartaExp()"><img src="img/iconos/drawicon.png">Mutación Masiva</li>
+        <li onclick="cambiarQuintaExp()"><img src="img/iconos/insondable.png">Marea Oscura</li>
+    </ul>
+</div>
+
+<!-- Footer -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-social d-flex justify-content-around pt-5">
+            <a href="https://www.twitch.tv/keyforgeargentina"><i class="fa fa-twitch"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/keyforgelatam/"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-at"></i></a>
+            <a href="#"><i class="fa fa-telegram"></i></a>
+        </div>
+        <div class="copyright"><a href="">@matirinfante</a> 2021 @ TUDW - UNCo</div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script type="application/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="application/javascript" src="js/floatingButton.js"></script>
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+</body>
+</html>

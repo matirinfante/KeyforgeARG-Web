@@ -1,0 +1,320 @@
+:root {
+    --rojocota: #660404;
+    --celesteaoa: #1196d3;
+    --darkazulmm: #101e32;
+    --violetawc: #281d3b;
+    --azultd: #123b59;
+}
+
+@keyframes zoom-in-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+p, a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+/** header **/
+
+/* Navigation bar */
+
+a {
+    color: white;
+}
+
+.logo {
+/ / height: 20 %;
+    width: 30%;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 1.1em;
+    padding: 0.7em;
+    transition: all 0.3s;
+}
+
+.navbar-nav .active {
+    background: #ba8b00;
+    color: black;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    background-color: #ba8b00;
+    color: black;
+    padding: 0.7em;
+}
+
+.navbar .navbar-nav .nav-link .participa {
+    border-radius: 20px;
+}
+
+/** Content **/
+
+/* Presentacion*/
+.forjando {
+    text-shadow: 1px 1px 3px black;
+}
+
+.cota .presentacion {
+    background-image: url("../img/fondos/cotabg.jpeg");
+    transition: all .3s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cota .presentacion .forjando {
+    color: black !important;
+    text-shadow: 1px 1px 3px white;
+}
+
+.cota .presentacion h3 {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px white;
+}
+
+.aoa .presentacion {
+    background-image: url("../img/fondos/bgsanctum (2).png");
+    transition: all .3s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aoa .presentacion .forjando {
+    color: black !important;
+    text-shadow: 1px 1px 3px white;
+}
+
+.aoa .presentacion h3 {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px white;
+}
+
+.wc .presentacion {
+    background-image: url("../img/fondos/wcbg.jpeg");
+    transition: all .3s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wc .presentacion .forjando {
+    color: black !important;
+    text-shadow: 1px 1px 3px white;
+}
+
+.wc .presentacion h3 {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px white;
+}
+
+.mm .presentacion {
+    background-image: url("../img/fondos/mmbg.jpeg");
+    transition: all .3s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mm .presentacion .forjando {
+    color: black !important;
+    text-shadow: 1px 1px 3px white;
+}
+
+.mm .presentacion h3 {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px white;
+}
+
+.td .presentacion {
+    background-image: url("../img/fondos/tdbg.jpeg");
+    transition: all .3s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.td .presentacion .forjando {
+    color: black !important;
+    text-shadow: 1px 1px 3px white;
+}
+
+.td .presentacion h3 {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px white;
+}
+
+.presentacion-item {
+    height: 921px;
+}
+
+.presentacion-item h2 {
+    /* padding-top: 290px;*/
+    font-size: 6em;
+    text-overflow: ellipsis;
+}
+
+.presentacion .caja-presentacion {
+    background-color: darkgrey;
+    opacity: 0.8;
+    height: 12rem;
+    flex-wrap: wrap;
+    margin-top: 350px;
+}
+
+/* Introduccion keyforge */
+
+.intro-keyforge {
+    background-image: url("../img/texturas/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Sponsors */
+
+.card {
+    opacity: 0.7;
+    background: white;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
+}
+
+.card h5 {
+    transition: all ease .2s;
+}
+
+.card:hover h5 {
+    color: darkred;
+}
+
+.card-img-top {
+    clip-path: circle(50% at 50% 50%) !important;
+}
+
+
+/** Footer **/
+
+.footer-section {
+    text-align: center;
+    background: #123b59;
+}
+
+.footer-social {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.copyright {
+    padding: 10px 10px 10px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9190a5;
+    opacity: 0.20;
+}
+
+@media (max-width: 767px) {
+    .navbar .container {
+        width: 100%;
+    }
+}
+
+/* Botón flotante */
+
+.floating-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.floating-button span {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.floating-button.active span {
+    transform: rotate(720deg);
+}
+
+.floating-button ul {
+    position: absolute;
+    bottom: 65px;
+    background: white;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    right: 25px;
+}
+
+.floating-button ul li img {
+    width: 15%;
+    margin-right: 10px;
+    transition: all 0.1s ease-in-out;
+}
+
+.floating-button ul li:hover img {
+    transform: scale(1.2);
+}
+
+.floating-button.active ul {
+    opacity: 1;
+    visibility: visible;
+    /*transition: 0.3s;*/
+}
+
+.floating-button ul li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.floating-button ul li:hover {
+    font-weight: 600;
+}
+
+.floating-button ul li:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.floating-button span:hover {
+    animation: zoom-in-out 0.5s ease-out;
+}

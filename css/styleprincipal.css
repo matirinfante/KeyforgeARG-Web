@@ -1,0 +1,126 @@
+@import "styles.css";
+
+/* BODY Y CONTAINER GENERAL*/
+body {
+    background-image: url("../img/texturas/fondo.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.acerca-container {
+    background: linear-gradient(
+            270deg, #c8c3b3, #e6e1d2 22%, #e7e2d3 50%, #e6e1d2 87%, #c4beae);
+    margin-top: 4vh;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+}
+
+/* Backgrounds */
+.cota .navbar, .cota .footer-section {
+    background-color: var(--rojocota) !important;
+}
+
+.aoa .navbar, .aoa .footer-section {
+    background-color: var(--celesteaoa) !important;
+}
+
+.wc .navbar, .wc .footer-section {
+    background-color: var(--violetawc) !important;
+}
+
+.mm .navbar, .mm .footer-section {
+    background-color: var(--darkazulmm) !important;
+}
+
+.td .navbar, .td .footer-section {
+    background-color: var(--azultd) !important;
+}
+
+.acerca-container .card {
+    background-color: #ba8b00;
+}
+
+.acerca-container .card-img-top {
+    clip-path: circle(50% at 50% 50%) !important;
+}
+
+/* Acerca */
+.about .card:hover h5 {
+    font-weight: 600;
+    color: black;
+    transform: scale(1.2);
+}
+
+.about .card:hover .btn-primary {
+    background-color: var(--rojocota) !important;
+    transition: 0.3s ease-in-out;
+}
+
+/*El juego / Glosario */
+
+.glosario .aoa .footer-section .copyright {
+    color: white;
+}
+
+.glosario .aumentar {
+    transition: all .2s ease-in-out;
+}
+
+.glosario .aumentar:hover {
+    transform: scale(1.3);
+}
+
+/* Crisol */
+.crisol .blog {
+    margin: 8%;
+    background-color: white;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 100%;
+    transform: translateY(-30px);
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, .3);
+}
+
+.blog-fecha span {
+    color: #962c51;
+}
+
+.blog-titulo h2 {
+    font-style: normal;
+    font-weight: 400;
+}
+
+.blog-descripcion p {
+    font-style: normal;
+    line-height: 2;
+}
+
+.crisol .carousel-inner .w-100 {
+    /*width: 100% !important;*/
+    height: 75vh;
+}
+
+/* Recursos */
+.recursos .card {
+    background-color: white !important;
+}
+
+.recursos h6 {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.recursos .card-body a {
+    color: #660404;
+}
+
+/* Formulario */
+.formulario label {
+    font-weight: bold;
+}
